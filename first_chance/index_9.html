@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=n0,initialscale=1.0,maximum-scale=1.0">
+    <meta name="viewport" content="width=320,maximum-scale=1.3,user-scalable=no">
+    <title>信通院会</title>
+    <!--<link rel="stylesheet" media="screen and (min-device-width:500px)" href="CSS/PC_home.css" />-->
+    <link rel="stylesheet" media="screen and (min-device-width:0) and (max-device-width:500px)" href="CSS/Mobile_home.css" />
+    <script src="JS/jquery-3.2.1.js"></script>
+    <script src="JS/paint_js.js"></script>
+
+    <style>
+        .all #body #clues {
+            background: url("img/thanks.png") no-repeat;
+            background-size: 100% auto;
+        }
+        #body #square {
+            width: 240px;
+            height: 200px;
+            margin: -13px auto 28px;
+            border: none;
+            background: none;
+        }
+        .all #square p {
+            font-size: 20px;
+            color: white;
+            letter-spacing: 5px;
+            font-family: "宋体","仿宋",sans-serif;
+            font-weight: bold;
+            width: 100%;
+            text-align: center;
+            margin: 15px auto;
+        }
+        #body #button {
+            margin: -50px auto 0;
+        }
+        #footer {
+            margin: -80px auto 0;
+        }
+
+        #footer #lock .lockImg:nth-child(1) {
+            width: 2.3em;height: 2.2em;
+            border: 1px solid black;
+        }
+        #footer #lock .lockImg:nth-child(2) {
+            width: 2.3em;height: 2.2em;
+            border: 1px solid black;
+        }
+        #footer #lock .lockImg:nth-child(3) {
+            width: 2.3em;height: 2.2em;
+            border: 1px solid black;
+        }
+        #footer #lock .lockImg:nth-child(4) {
+            width: 2.3em;height: 2.2em;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="all">
+        <!--头-->
+        <div id="header">
+            <img src="img/header/123.png" alt="">
+        </div>
+        <!--身体-->
+        <div id="body">
+            <div id="clues">
+                <!--<p>"人"&nbsp&nbsp字加一笔，<br>你能想到几个字？快来挑战！</p>-->
+            </div>
+            <div id="square">
+                <!--<img src="img/font/u=35968780,3243353780&fm=27&gp=0.jpg" alt="">-->
+                <!--<canvas id="canvas"></canvas>-->
+                <p>新时代  新征程</p>
+                <p>信息与通信工程</p>
+                <p>学院学生会</p>
+                <p>不忘初心   砥砺前行</p>
+            </div>
+            <div id="button">
+                <a href="index.html"><p>回到首页</p></a>
+            </div>
+        </div>
+        <!--锁+文字-->
+        <div id="footer">
+            <div id="lock">
+                <img class="lockImg" src="img/font/da.png" alt="">
+                <img class="lockImg" src="img/font/huo.png" alt="">
+                <img class="lockImg" src="img/font/sheng.png" alt="">
+                <img class="lockImg" src="img/font/zhong.png" alt="">
+            </div>
+            <p>共有4个关键字待解锁</p>
+        </div>
+    </div>
+
+    <script>
+    // $("div").css("visibility", "hidden");
+    $(document).ready(function(){
+        $("#header").hide();
+        $("#body").hide();
+        $("#clues").hide();
+        $("#square").hide();
+        $("#button").hide();
+        $("#footer").hide();
+
+        // $("div").css("visibility", "hidden");
+        $("#header").fadeIn(300, function () {
+            $("#body").fadeIn(300, function () {
+                $("#clues").fadeIn(300, function () {
+                    $("#square").fadeIn(300, function () {
+                        $("#button").fadeIn(300, function () {
+                            $("#footer").fadeIn(300);
+                        });
+                    });
+                });
+            });
+        });
+    });
+
+    window.onload = function(){
+        document.getElementById('css').href = 'CSS/Mobile_home.css' ;
+    }
+    </script>
+
+</body>
+</html>

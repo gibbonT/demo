@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=320,maximum-scale=1.3,user-scalable=no">
+    <title>点燃思潮，星火燎原</title>
+    <!--<link rel="stylesheet" media="screen and (min-device-width:500px)" href="CSS/PC_instruction.css" />-->
+    <link rel="stylesheet" media="screen and (min-device-width:0) and (max-device-width:500px)" href="CSS/Mobile_instruction.css" />
+    <script src="JS/jquery-3.2.1.js"></script>
+
+    <style>
+        .all {
+            background: rgba(253, 203, 168, 1);
+        }
+
+        .all #header #huo {
+            width: 60%;
+            height: 180px;
+            margin-top: 10px;
+        }
+
+        .all #explain {
+            margin-top: -5px;
+        }
+
+        .all #explain img:nth-child(1) {
+            width: 53%;
+            height: 20px;
+            top: 5px;left: 0;right: 0;bottom: 0;
+            margin: 0.9em auto 10px;
+            position: absolute;
+            z-index: 10;
+        }
+        .all #explain img:nth-child(2) {
+            width: 90%;
+            height: 220px;
+            opacity: 1;
+            top: 0;left: 0;right: 0;bottom: 0;
+            margin: 50px auto;
+            position: absolute;
+            z-index: 0;
+        }
+
+        .all #explain p {
+            width: 76%;
+            /*font-weight: bold;*/
+            line-height: 20px;
+            color: rgba(194, 95, 91, 1);
+            top: 132px;left: 50%;
+            -webkit-transform: translate(-50%, -30%);
+            -ms-transform: translate(-50%, -30%);
+            transform: translate(-50%, -30%);
+            letter-spacing: 1px;
+        }
+
+        .all #button {
+            width: 36%;
+            height: 30px;
+            text-align: center;
+            margin: -20px auto 0;
+            position: relative;
+            z-index: 999;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="all">
+        <div id="header">
+            <img id="huo" src="img/font/huo_color.png" alt="">
+        </div>
+        <div id="explain">
+            <img src="img/explain/huo_2.png" alt="">
+            <img src="img/explain/huo_1.png" alt="火">
+            <p>“我心中的中国红”线上照片征集活动， 图说十九大、我为十九大打call， “颂成都”诗词创作朗诵大赛， 六场名企零距离，一百二十次志愿服务，三千三百多个小时志愿服务时长。 撒播星火，引领思潮，信通之火，燃成电青年奉献青春。</p>
+        </div>
+        <div id="button">
+            <a href="index_5.html">
+                <p>看看下一个</p>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $("#header").hide();
+            $("#explain").hide();
+            $("#button").hide();
+
+            $("#header").fadeIn(300, function () {
+                $("#explain").fadeIn(1000, function () {
+                    $("#button").fadeIn(600, function () {});
+                });
+            });
+            //     $("#button").hide().show(1000);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=n0,initialscale=1.0,maximum-scale=1.0">
+    <meta name="viewport" content="width=320,maximum-scale=1.3,user-scalable=no">
+    <title>学生权益，赴我全力</title>
+    <!--<link rel="stylesheet" media="screen and (min-device-width:500px)" href="CSS/PC_instruction.css" />-->
+    <link rel="stylesheet" media="screen and (min-device-width:0) and (max-device-width:500px)" href="CSS/Mobile_instruction.css" />
+    <script src="JS/jquery-3.2.1.js"></script>
+
+    <style>
+
+        .all {
+            background: rgba(159, 213, 189, 1);
+        }
+
+        .all #header #sheng {
+            width: 55%;
+            height: 180px;
+            margin-top: 10px;
+            /*margin-left: -50px;*/
+        }
+
+        .all #header img:nth-child(1) {
+            width: 52%;
+            height: 140px;
+            z-index: 1;
+        }
+
+        .all #explain {
+            margin-top: 0;
+        }
+        .all #explain img:nth-child(1) {
+            width: 55%;
+            height: 20px;
+            top: 5px;left: 0;right: 0;bottom: 0;
+            margin: 0.9em auto 10px;
+            position: absolute;
+            z-index: 10;
+        }
+        .all #explain img:nth-child(2) {
+            width: 90%;
+            height: 220px;
+            opacity: 1;
+            top: 0;left: 0;right: 0;bottom: 0;
+            margin: 20px auto;
+            position: absolute;
+            z-index: 0;
+        }
+        .all #explain p {
+            width: 76%;
+            /*font-weight: bold;*/
+            font-size: 16px;
+            line-height: 19px;
+            color: rgba(43, 140, 143, 0.7);
+            top: 124px;left: 50%;
+            -webkit-transform: translate(-50%, -30%);
+            -ms-transform: translate(-50%, -30%);
+            transform: translate(-50%, -30%);
+            letter-spacing: 1px;
+        }
+
+        .all #button {
+            width: 36%;
+            height: 30px;
+            text-align: center;
+            margin: -45px auto 0;
+            position: relative;
+            z-index: 999;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="all">
+        <div id="header">
+            <img id="sheng" src="img/font/sheng_color.png" alt="">
+        </div>
+        <div id="explain">
+            <img src="img/explain/sheng_2.png" alt="">
+            <img src="img/explain/sheng_1.png" alt="生">
+            <p>失物招领平台建立， 清晨送书暖心之举， 女生发展指引方向， 一卡办理天府畅通…… 全心全意，做成电学子的眼耳口鼻；尽心尽力，让维权意识深入人心！ 维权奉献，革旧焕新，信通维权，与科大学生亲密无间零距离！</p>
+        </div>
+        <div id="button">
+            <a href="index_7.html">
+                <p>看看下一个</p>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $("#header").hide();
+            $("#explain").hide();
+            $("#button").hide();
+
+            $("#header").fadeIn(300, function () {
+                $("#explain").fadeIn(1000, function () {
+                    $("#button").fadeIn(600, function () {});
+                });
+            });
+            //     $("#button").hide().show(1000);
+        });
+    </script>
+
+</body>
+</html>

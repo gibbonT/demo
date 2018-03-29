@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=320,maximum-scale=1.3,user-scalable=no">
+    <title>信通品牌，大气大为</title>
+    <!--<link rel="stylesheet" media="screen and (min-device-width:500px)" href="CSS/PC_instruction.css" />-->
+    <link rel="stylesheet" media="screen and (min-device-width:0) and (max-device-width:500px)" href="CSS/Mobile_instruction.css" />
+    <script src="JS/jquery-3.2.1.js"></script>
+
+    <style>
+        .all {
+            background: rgba(153,193,230, 0.9);
+        }
+        .all #header img:nth-child(1) {
+            width: 70%;
+            height: 180px;
+            margin-top: 0;
+            z-index: 9;
+        }
+
+        .all #explain {
+            margin-top: -15px;
+        }
+        .all #explain img:nth-child(1) {
+            width: 53%;
+            height: 20px;
+            top: 5px;left: 0;right: 0;bottom: 0;
+            margin: 0.8em auto 10px;
+            position: absolute;
+            z-index: 10;
+        }
+        .all #explain img:nth-child(2) {
+            width: 85%;
+            height: 235px;
+            opacity: 1;
+            top: 0;left: 0;right: 0;bottom: 0;
+            margin: 10px auto;
+            position: absolute;
+            z-index: 0;
+        }
+        .all #explain p {
+            width: 76%;
+            font-size: 15px;
+            line-height: 20px;
+            color: rgba(20, 105, 175, 0.7);
+            top: 120px;left: 50%;
+            -webkit-transform: translate(-50%, -30%);
+            -ms-transform: translate(-50%, -30%);
+            transform: translate(-50%, -30%);
+            letter-spacing: 1px;
+        }
+
+        .all #button {
+            width: 36%;
+            height: 30px;
+            text-align: center;
+            margin: -30px auto 0;
+            position: relative;
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="all">
+        <div id="header">
+            <img src="img/font/20180327235503.png" alt="">
+        </div>
+        <div id="explain">
+            <img src="img/explain/da_2.png" alt="">
+            <img src="img/explain/da_1.png" alt="大">
+            <p>蛋糕宴庆生母校，石板路合影青春。 21天系列活动好评如潮，新声代现场座无虚席, 查令十字街84号，我们在笔尖信纸间关注成电青年恋爱问题。 21天健身，悦动青春，创新健身新模式。 大而精致，广而不庸，信通品牌，为科大校园文化贡献信通智慧！</p>
+        </div>
+        <div id="button">
+            <a href="index_3.html">
+                <p>看看下一个</p>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $("#header").hide();
+            $("#explain").hide();
+            $("#button").hide();
+
+            $("#header").fadeIn(300, function () {
+                $("#explain").fadeIn(1000, function () {
+                    $("#button").fadeIn(600, function () {});
+                });
+            });
+        });
+    </script>
+</body>
+</html>

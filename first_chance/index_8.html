@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=n0,initialscale=1.0,maximum-scale=1.0">
+    <meta name="viewport" content="width=320,maximum-scale=1.3,user-scalable=no">
+    <title>壮我信通，众志成城</title>
+    <!--<link rel="stylesheet" media="screen and (min-device-width:500px)" href="CSS/PC_instruction.css" />-->
+    <link rel="stylesheet" media="screen and (min-device-width:0) and (max-device-width:500px)" href="CSS/Mobile_instruction.css" />
+    <script src="JS/jquery-3.2.1.js"></script>
+
+    <style>
+        .all {
+            background: rgba(251, 212, 168, 1);
+        }
+
+        .all #header img:nth-child(1) {
+            width: 60%;
+            height: 180px;
+            margin-top: 10px;
+            z-index: 1;
+        }
+
+        .all #explain {
+            margin-top: -10px;
+        }
+        .all #explain img:nth-child(1) {
+            width: 50%;
+            height: 20px;
+            top: 5px;left: 0;right: 0;bottom: 0;
+            margin: 0.9em auto 10px;
+            position: absolute;
+            z-index: 10;
+        }
+        .all #explain img:nth-child(2) {
+            width: 90%;
+            height: 232px;
+            opacity: 1;
+            top: 0;left: 0;right: 0;bottom: 0;
+            margin: 50px auto;
+            position: absolute;
+            z-index: 0;
+        }
+
+        .all #explain p {
+            width: 76%;
+            /*font-weight: bold;*/
+            line-height: 24px;
+            color: rgba(174, 122, 13, 1);
+            top: 131px;left: 50%;
+            -webkit-transform: translate(-50%, -30%);
+            -ms-transform: translate(-50%, -30%);
+            transform: translate(-50%, -30%);
+            letter-spacing: 1px;
+        }
+
+        .all #button {
+            width: 36%;
+            height: 30px;
+            text-align: center;
+            margin: -20px auto 0;
+            position: relative;
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="all">
+        <div id="header">
+            <img src="img/font/zhong_color.png" alt="">
+        </div>
+        <div id="explain">
+            <img src="img/explain/zhong_2.png" alt="">
+            <img src="img/explain/zhong_1.png" alt="众">
+            <p>创新项目竞标会， 奇思妙想争相迸涌，思维火花交相跳跃； 部门中期报告会， 院会成员凝聚一体，沉淀经验砥砺前行； 三千分钟技能培训，四百小时例会实战，两百天日夜相守。 携手并进，突破极限，信通菁英，共写信通荣耀！</p>
+        </div>
+        <div id="button">
+            <a href="index_9.html">
+                <p>看看下一个</p>
+            </a>
+        </div>
+    </div>
+
+    <script>
+
+        $(document).ready(function(){
+            $("#header").hide();
+            $("#explain").hide();
+            $("#button").hide();
+
+            $("#header").fadeIn(300, function () {
+                $("#explain").fadeIn(1000, function () {
+                    $("#button").fadeIn(600, function () {});
+                });
+            });
+            //     $("#button").hide().show(1000);
+        });
+
+    </script>
+
+</body>
+</html>
